@@ -1,5 +1,5 @@
 const readline = require('readline');
-const apiKey = '95e8e96759204a1597f7ea0f6e1e9b4b';
+const { apiKey }  = require('./config_file');
 
 // The prompt for the command line interface
 const display = readline.createInterface(

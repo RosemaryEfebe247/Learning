@@ -1,0 +1,10 @@
+yarn init
+npm install -g typescript
+npx tsc --init
+yarn add type-graphql apollo-server graphql@15.x reflect-metadata @typegoose/typegoose mongoose class-validator bcrypt jsonwebtoken cookie-parser nanoid config dotenv
+yarn add --dev ts-node-dev
+yarn add --dev typescript
+
+./tsconfig.json file and make necessary updates
+./package.json and add a script with "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+start the application with either yarn dev or npm run dev

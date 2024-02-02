@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import config from "../../config/default"
+import config from "config"
 
 export async function connectToMongo(){
     try{
-        await mongoose.connect(config.dbUrl)
+        await mongoose.connect(config.get('dbUrl'))
         console.log("connected to database")
     }catch(error){
 console.error(error)

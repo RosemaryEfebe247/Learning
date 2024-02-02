@@ -16,6 +16,7 @@ constructor(private userService: UserService){
 
     @Mutation(() => String)
     login(@Arg('input') input: LoginInput, @Ctx() context: Context){
+        console.log(Arg)
         return this.userService.login(input, context);
     }
 

@@ -12,6 +12,7 @@ class UserService {
 
     async login(input: LoginInput, context: Context) {
         const e = 'Invalid email or password'
+        console.log(input)
         // Get user by email and call lean() to convert the returned mongoose document
         // to javascript document ie removing extra properties that may come with the mongoose document
         const user = await UserModel.find().findByEmail(input.email).lean();

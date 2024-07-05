@@ -24,4 +24,4 @@ let bird = new Bird(2);
 bird.walk();
 bird.fly();
 
-console.log("Bird is flying")
+console.log("The Bird keeps flying")
